@@ -5,15 +5,60 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
+  android:padding="@dimen/activity_padding"
   tools:context=".MainActivity">
 
-  <TextView
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/vertical_guideline"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Hello World!"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.05"/>
+
+  <TextView
+    android:id="@+id/pair_2_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/widget_margin"
+    android:includeFontPadding="false"
+    android:text="2"
+    app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
     app:layout_constraintTop_toTopOf="parent"/>
+
+  <ProgressBar
+    android:id="@+id/pair_2_count"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:max="@integer/pair_count_max"
+    android:progress="0"
+    android:layout_margin="@dimen/widget_margin"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@id/pair_2_label"
+    app:layout_constraintBottom_toBottomOf="@id/pair_2_label"/>
+
+  <TextView
+    android:id="@+id/pair_3_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/widget_margin"
+    android:includeFontPadding="false"
+    android:text="3"
+    app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+    app:layout_constraintTop_toBottomOf="@id/pair_2_label"/>
+
+  <ProgressBar
+    android:id="@+id/pair_3_count"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:max="@integer/pair_count_max"
+    android:progress="0"
+    android:layout_margin="@dimen/widget_margin"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@id/pair_3_label"
+    app:layout_constraintBottom_toBottomOf="@id/pair_3_label"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
