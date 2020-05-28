@@ -61,4 +61,211 @@
     app:layout_constraintTop_toTopOf="@id/pair_3_label"
     app:layout_constraintBottom_toBottomOf="@id/pair_3_label"/>
 
+  <TextView
+    android:id="@+id/pair_4_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/widget_margin"
+    android:includeFontPadding="false"
+    android:text="4"
+    app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+    app:layout_constraintTop_toBottomOf="@id/pair_3_label"/>
+
+  <ProgressBar
+    android:id="@+id/pair_4_count"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:max="@integer/pair_count_max"
+    android:progress="0"
+    android:layout_margin="@dimen/widget_margin"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@id/pair_4_label"
+    app:layout_constraintBottom_toBottomOf="@id/pair_4_label"/>
+
+  <TextView
+    android:id="@+id/pair_5_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/widget_margin"
+    android:includeFontPadding="false"
+    android:text="5"
+    app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+    app:layout_constraintTop_toBottomOf="@id/pair_4_label"/>
+
+  <ProgressBar
+    android:id="@+id/pair_5_count"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:max="@integer/pair_count_max"
+    android:progress="0"
+    android:layout_margin="@dimen/widget_margin"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@id/pair_5_label"
+    app:layout_constraintBottom_toBottomOf="@id/pair_5_label"/>
+
+  <TextView
+    android:id="@+id/pair_6_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/widget_margin"
+    android:includeFontPadding="false"
+    android:text="6"
+    app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+    app:layout_constraintTop_toBottomOf="@id/pair_5_label"/>
+
+  <ProgressBar
+    android:id="@+id/pair_6_count"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:max="@integer/pair_count_max"
+    android:progress="0"
+    android:layout_margin="@dimen/widget_margin"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@id/pair_6_label"
+    app:layout_constraintBottom_toBottomOf="@id/pair_6_label"/>
+
+  <TextView
+    android:id="@+id/pair_7_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/widget_margin"
+    android:includeFontPadding="false"
+    android:text="7"
+    app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+    app:layout_constraintTop_toBottomOf="@id/pair_6_label"/>
+
+  <ProgressBar
+    android:id="@+id/pair_7_count"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:max="@integer/pair_count_max"
+    android:progress="0"
+    android:layout_margin="@dimen/widget_margin"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@id/pair_7_label"
+    app:layout_constraintBottom_toBottomOf="@id/pair_7_label"/>
+
+  <TextView
+    android:id="@+id/pair_8_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/widget_margin"
+    android:includeFontPadding="false"
+    android:text="8"
+    app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+    app:layout_constraintTop_toBottomOf="@id/pair_7_label"/>
+
+  <ProgressBar
+    android:id="@+id/pair_8_count"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:max="@integer/pair_count_max"
+    android:progress="0"
+    android:layout_margin="@dimen/widget_margin"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@id/pair_8_label"
+    app:layout_constraintBottom_toBottomOf="@id/pair_8_label"/>
+
+  <TextView
+    android:id="@+id/pair_9_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/widget_margin"
+    android:includeFontPadding="false"
+    android:text="9"
+    app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+    app:layout_constraintTop_toBottomOf="@id/pair_8_label"/>
+
+  <ProgressBar
+    android:id="@+id/pair_9_count"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:max="@integer/pair_count_max"
+    android:progress="0"
+    android:layout_margin="@dimen/widget_margin"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@id/pair_9_label"
+    app:layout_constraintBottom_toBottomOf="@id/pair_9_label"/>
+
+  <TextView
+    android:id="@+id/pair_10_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/widget_margin"
+    android:includeFontPadding="false"
+    android:text="10"
+    app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+    app:layout_constraintTop_toBottomOf="@id/pair_9_label"/>
+
+  <ProgressBar
+    android:id="@+id/pair_10_count"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:max="@integer/pair_count_max"
+    android:progress="0"
+    android:layout_margin="@dimen/widget_margin"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@id/pair_10_label"
+    app:layout_constraintBottom_toBottomOf="@id/pair_10_label"/>
+
+  <TextView
+    android:id="@+id/pair_11_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/widget_margin"
+    android:includeFontPadding="false"
+    android:text="11"
+    app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+    app:layout_constraintTop_toBottomOf="@id/pair_10_label"/>
+
+  <ProgressBar
+    android:id="@+id/pair_11_count"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:max="@integer/pair_count_max"
+    android:progress="0"
+    android:layout_margin="@dimen/widget_margin"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@id/pair_11_label"
+    app:layout_constraintBottom_toBottomOf="@id/pair_11_label"/>
+
+  <TextView
+    android:id="@+id/pair_12_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/widget_margin"
+    android:includeFontPadding="false"
+    android:text="12"
+    app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+    app:layout_constraintTop_toBottomOf="@id/pair_11_label"/>
+
+  <ProgressBar
+    android:id="@+id/pair_12_count"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:max="@integer/pair_count_max"
+    android:progress="0"
+    android:layout_margin="@dimen/widget_margin"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@id/pair_12_label"
+    app:layout_constraintBottom_toBottomOf="@id/pair_12_label"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
