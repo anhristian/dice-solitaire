@@ -24,7 +24,6 @@
     android:text="2"
     app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
     app:layout_constraintTop_toTopOf="parent"/>
-
   <ProgressBar
     android:id="@+id/pair_2_count"
     android:layout_width="0dp"
@@ -47,7 +46,6 @@
     android:text="3"
     app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
     app:layout_constraintTop_toBottomOf="@id/pair_2_label"/>
-
   <ProgressBar
     android:id="@+id/pair_3_count"
     android:layout_width="0dp"
@@ -70,7 +68,6 @@
     android:text="4"
     app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
     app:layout_constraintTop_toBottomOf="@id/pair_3_label"/>
-
   <ProgressBar
     android:id="@+id/pair_4_count"
     android:layout_width="0dp"
@@ -93,7 +90,6 @@
     android:text="5"
     app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
     app:layout_constraintTop_toBottomOf="@id/pair_4_label"/>
-
   <ProgressBar
     android:id="@+id/pair_5_count"
     android:layout_width="0dp"
@@ -116,7 +112,6 @@
     android:text="6"
     app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
     app:layout_constraintTop_toBottomOf="@id/pair_5_label"/>
-
   <ProgressBar
     android:id="@+id/pair_6_count"
     android:layout_width="0dp"
@@ -139,7 +134,6 @@
     android:text="7"
     app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
     app:layout_constraintTop_toBottomOf="@id/pair_6_label"/>
-
   <ProgressBar
     android:id="@+id/pair_7_count"
     android:layout_width="0dp"
@@ -162,7 +156,6 @@
     android:text="8"
     app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
     app:layout_constraintTop_toBottomOf="@id/pair_7_label"/>
-
   <ProgressBar
     android:id="@+id/pair_8_count"
     android:layout_width="0dp"
@@ -185,7 +178,6 @@
     android:text="9"
     app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
     app:layout_constraintTop_toBottomOf="@id/pair_8_label"/>
-
   <ProgressBar
     android:id="@+id/pair_9_count"
     android:layout_width="0dp"
@@ -208,7 +200,6 @@
     android:text="10"
     app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
     app:layout_constraintTop_toBottomOf="@id/pair_9_label"/>
-
   <ProgressBar
     android:id="@+id/pair_10_count"
     android:layout_width="0dp"
@@ -231,7 +222,6 @@
     android:text="11"
     app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
     app:layout_constraintTop_toBottomOf="@id/pair_10_label"/>
-
   <ProgressBar
     android:id="@+id/pair_11_count"
     android:layout_width="0dp"
@@ -254,7 +244,6 @@
     android:text="12"
     app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
     app:layout_constraintTop_toBottomOf="@id/pair_11_label"/>
-
   <ProgressBar
     android:id="@+id/pair_12_count"
     android:layout_width="0dp"
@@ -268,4 +257,24 @@
     app:layout_constraintTop_toTopOf="@id/pair_12_label"
     app:layout_constraintBottom_toBottomOf="@id/pair_12_label"/>
 
+  <Button
+    android:id="@+id/roller"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Roll"
+    android:layout_margin="8dp"
+    app:layout_constraintTop_toBottomOf="@id/pair_12_label"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/roll_display"/>
+
+  <TextView
+    android:id="@+id/roll_display"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:textSize="20sp"
+    android:text="Dummy display"
+    app:layout_constraintTop_toBottomOf="@id/pair_12_label"
+    app:layout_constraintStart_toEndOf="@id/roller"
+    app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
