@@ -1,3 +1,4 @@
 <resources>
   <string name="app_name">Dice Solitaire</string>
+  <string name="roll_title">Roll</string>
 </resources>

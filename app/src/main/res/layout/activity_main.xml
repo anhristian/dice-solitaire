@@ -261,7 +261,7 @@
     android:id="@+id/roller"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Roll"
+    android:text="@string/roll_title"
     android:layout_margin="8dp"
     app:layout_constraintTop_toBottomOf="@id/pair_12_label"
     app:layout_constraintStart_toStartOf="parent"
@@ -277,4 +277,131 @@
     app:layout_constraintTop_toBottomOf="@id/pair_12_label"
     app:layout_constraintStart_toEndOf="@id/roller"
     app:layout_constraintEnd_toEndOf="parent"/>
+
+  <TextView
+    android:id="@+id/scratch_1_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:includeFontPadding="false"
+    android:layout_margin="@dimen/widget_margin"
+    android:text="1"
+    app:layout_constraintBottom_toTopOf="@id/scratch_2_label"
+    app:layout_constraintEnd_toStartOf="@id/vertical_guideline"/>
+  <ProgressBar
+    android:id="@+id/scratch_1_count"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_margin="@dimen/widget_margin"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    android:max="8"
+    app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@id/scratch_1_label"
+    app:layout_constraintBottom_toBottomOf="@id/scratch_1_label"/>
+
+  <TextView
+    android:id="@+id/scratch_2_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:includeFontPadding="false"
+    android:layout_margin="@dimen/widget_margin"
+    android:text="2"
+    app:layout_constraintBottom_toTopOf="@id/scratch_3_label"
+    app:layout_constraintEnd_toStartOf="@id/vertical_guideline"/>
+  <ProgressBar
+    android:id="@+id/scratch_2_count"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_margin="@dimen/widget_margin"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    android:max="8"
+    app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@id/scratch_2_label"
+    app:layout_constraintBottom_toBottomOf="@id/scratch_2_label"/>
+
+  <TextView
+    android:id="@+id/scratch_3_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:includeFontPadding="false"
+    android:layout_margin="@dimen/widget_margin"
+    android:text="3"
+    app:layout_constraintBottom_toTopOf="@id/scratch_4_label"
+    app:layout_constraintEnd_toStartOf="@id/vertical_guideline"/>
+  <ProgressBar
+    android:id="@+id/scratch_3_count"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_margin="@dimen/widget_margin"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    android:max="8"
+    app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@id/scratch_3_label"
+    app:layout_constraintBottom_toBottomOf="@id/scratch_3_label"/>
+
+  <TextView
+    android:id="@+id/scratch_4_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:includeFontPadding="false"
+    android:layout_margin="@dimen/widget_margin"
+    android:text="4"
+    app:layout_constraintBottom_toTopOf="@id/scratch_5_label"
+    app:layout_constraintEnd_toStartOf="@id/vertical_guideline"/>
+  <ProgressBar
+    android:id="@+id/scratch_4_count"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_margin="@dimen/widget_margin"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    android:max="8"
+    app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@id/scratch_4_label"
+    app:layout_constraintBottom_toBottomOf="@id/scratch_4_label"/>
+
+  <TextView
+    android:id="@+id/scratch_5_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:includeFontPadding="false"
+    android:layout_margin="@dimen/widget_margin"
+    android:text="5"
+    app:layout_constraintBottom_toTopOf="@id/scratch_6_label"
+    app:layout_constraintEnd_toStartOf="@id/vertical_guideline"/>
+  <ProgressBar
+    android:id="@+id/scratch_5_count"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_margin="@dimen/widget_margin"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    android:max="8"
+    app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@id/scratch_5_label"
+    app:layout_constraintBottom_toBottomOf="@id/scratch_5_label"/>
+
+  <TextView
+    android:id="@+id/scratch_6_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:includeFontPadding="false"
+    android:layout_margin="@dimen/widget_margin"
+    android:text="6"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/vertical_guideline"/>
+  <ProgressBar
+    android:id="@+id/scratch_6_count"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_margin="@dimen/widget_margin"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    android:max="8"
+    app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="@id/scratch_6_label"
+    app:layout_constraintBottom_toBottomOf="@id/scratch_6_label"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
