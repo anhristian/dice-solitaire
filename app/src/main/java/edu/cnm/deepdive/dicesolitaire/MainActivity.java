@@ -65,16 +65,17 @@ public class MainActivity extends AppCompatActivity {
 
   private void setupPlayControls() {
     //thi is class inside the method, that is not visible outside this method.
-    class RollerListener implements OnClickListener {
+    roller = findViewById(R.id.roller);
+    //TODO find and wire uo dice ImageView objects.
+    roller.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
         Roll roll = new Roll(rng);
         //TODO Display dice images.
+
+
       }
-    }
-    roller = findViewById(R.id.roller);
-    //TODO find and wire uo dice ImageView objects.
-    roller.setOnClickListener(new RollerListener());
+    });
   }
 
   private void setupPairControls(Resources res, NumberFormat formatter) {
