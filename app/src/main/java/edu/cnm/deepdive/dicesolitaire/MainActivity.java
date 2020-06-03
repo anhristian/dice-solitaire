@@ -3,9 +3,11 @@ package edu.cnm.deepdive.dicesolitaire;
 import static edu.cnm.deepdive.dicesolitaire.model.Roll.NUM_FACES;
 
 import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,16 +23,20 @@ public class MainActivity extends AppCompatActivity {
   private static final String PAIR_COUNT_ID_FORMAT = "pair_%d_count";
   private static final String SCRATCH_LABEL_ID_FORMAT = "scratch_%d_label";
   private static final String SCRATCH_COUNT_ID_FORMAT = "scratch_%d_count";
+  private static final String DIE_IMAGE_ID_FORMAT = "die_%d";
+  private static final String DICE_FACE_ID_FORMAT = "face_%d";
 
 
   private int minPairValue = 2;
   private int maxPairValue = 2 * NUM_FACES;
   private TextView[] pairLabels;
   private ProgressBar[] pairCounts;
-  private Button roller;
-  private Random rng = new Random();
   private TextView[] scratchLabels;
   private ProgressBar[] scratchCounts;
+  private ImageView[] diceImages;
+  private Drawable[] diceFaces;
+  private Button roller;
+  private Random rng = new Random();
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     Resources res = getResources();
     NumberFormat formatter = NumberFormat.getInstance();
     setupPairControls(res, formatter);
-    setupPlayControls();
+    setupPlayControls(res);
     setupScratchControls(res, formatter);
   }
 
@@ -59,14 +65,28 @@ public class MainActivity extends AppCompatActivity {
       int countId = res.getIdentifier(scratchIdCount, "id", getPackageName());
       scratchCounts[i - 1] = findViewById(countId);
       scratchCounts[i - 1].setProgress(1 + rng.nextInt(7));
-
     }
   }
 
-  private void setupPlayControls() {
+  private void setupPlayControls(Resources res) {
     //thi is class inside the method, that is not visible outside this method.
     roller = findViewById(R.id.roller);
-    //TODO find and wire uo dice ImageView objects.
+    //allocate space
+    diceImages = new ImageView[Roll.NUM_DICE];
+    for (int i = 0; i < Roll.NUM_DICE; i++) {
+      String idString = String.format(DIE_IMAGE_ID_FORMAT, i + 1);
+      int id = res.getIdentifier(idString, "id", getPackageName());
+      diceImages[i] = findViewById(id);
+      diceImages[i].setImageDrawable(getDrawable(R.drawable.face_6));
+    }
+    diceFaces = new Drawable[Roll.NUM_FACES];
+    for (int i = 0; i < NUM_FACES; i++) {
+      String idString = String.format(DICE_FACE_ID_FORMAT, i + 1);
+      int id = res.getIdentifier(idString, "drawable", getPackageName());
+      diceFaces[i] = getDrawable(id);
+      //Drawable face = getDrawable(id);
+      //diceFaces[i] = face;
+    }
     roller.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
