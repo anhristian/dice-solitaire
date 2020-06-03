@@ -85,14 +85,19 @@ public class MainActivity extends AppCompatActivity {
       int id = res.getIdentifier(idString, "drawable", getPackageName());
       diceFaces[i] = getDrawable(id);
       //Drawable face = getDrawable(id);
-      //diceFaces[i] = face;
+      //diceFaces[i] = face; line 86 is the shortcut for 87&88
     }
     roller.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
         Roll roll = new Roll(rng);
+        for (int i = 0; i < Roll.NUM_DICE; i++) {
+          ImageView view = diceImages[i];
+          int value = roll.getDice()[i];
+          Drawable face = diceFaces[value - 1];
+          view.setImageDrawable(face);
+        }
         //TODO Display dice images.
-
 
       }
     });
